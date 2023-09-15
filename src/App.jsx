@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage';
 import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
 import Wallet from './pages/Wallet';
+import Dashboard from './dashboardpages/Dashboard';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
         <Route path='/signin' element={<SignIn/>}/>
         <Route path='/' element={<LandingPage/>}/>
        <Route  path='/wallet' element={ <Wallet/>}/>
+       <Route  path='/dashboard' element={ <Dashboard/>}/>
+
         </Routes>
     
      </Router>

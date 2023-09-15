@@ -8,7 +8,7 @@ const SignUp = () => {
    const[password, setPassword] = useState("");
 
    const handleSignup = () =>{
-    console.log(name , email, phoneNumber, password)
+    console.log( email, phoneNumber, password)
    }
 
   return (
@@ -22,12 +22,11 @@ const SignUp = () => {
         <p className="text-[20px] pb-10">We are thrilled to see you</p>
          <form action="" className=" ">
           <label htmlFor="">Email</label><br />
-          <input type="email" className=" w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-lg" value={email} onChange={(e) => setEmail(e.target.value)}/><br />
+          <input type="email" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-lg" value={email} onChange={(e) => setEmail(e.target.value)}/><br />
           <label htmlFor="">Phone Number</label><br />
-          <input type="text" className="w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-lg" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/><br />
+          <input type="text" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-lg" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/><br />
           <label htmlFor="">Password</label><br />
-          <input type="password" className="w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-lg" value={password} onChange={(e) => setPassword(e.target.value)}/><br />
-          <button className=" bg-[#03292C] tex-[#FFFFFF] text-xl w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Sign up</button> <br />
+          <input type="password" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-lg" value={password} onChange={(e) => setPassword(e.target.value)}/><br />
           <button className=" text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
 
          </form>
