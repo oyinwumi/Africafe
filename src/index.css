@@ -10,6 +10,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'satoshi';
+  src: url('../src/Satoshi-Variable.ttf'); 
+}
+
+@font-face {
+  font-family: 'adhoc';
+  src: url('../src/lte50454.ttf'); 
+}
+
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

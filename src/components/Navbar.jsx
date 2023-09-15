@@ -10,7 +10,7 @@ const Navbar = () => {
          <Link to="" className="">Make reservation</Link>
        </div>
        <div>
-        <img src={Logo} alt="" />
+        <Link to="/"><img src={Logo} alt="" /></Link>
        </div>
        <div className="flex gap-10">
        <Link to="" className="">Contact</Link>
