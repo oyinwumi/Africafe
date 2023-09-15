@@ -28,7 +28,7 @@ const SignIn = () => {
         <button className=" text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
 
        </form>
-       <p className="text-center text-[14px]">Not account yet?  <span className="text-[#A77444]">Get started</span></p>
+       <p className="text-center text-[14px]">Not account yet?  <span className="text-[#A77444]"><Link to="/signup">Get started</Link></span></p>
     </div>
   </div>
   </div>

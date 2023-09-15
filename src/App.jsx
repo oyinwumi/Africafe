@@ -4,6 +4,7 @@ import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
 import Wallet from './pages/Wallet';
 import Dashboard from './dashboardpages/Dashboard';
+import Customer from './dashboardpages/Customer';
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
         <Route path='/' element={<LandingPage/>}/>
        <Route  path='/wallet' element={ <Wallet/>}/>
        <Route  path='/dashboard' element={ <Dashboard/>}/>
+       <Route  path='/customer' element={ <Customer/>}/>
+
 
         </Routes>
     
