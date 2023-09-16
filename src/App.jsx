@@ -11,7 +11,7 @@ import AddcoinModal from './dashboardpages/AddcoinModal';
 function App() {
 
   return (
-   <div >
+   <div className='overflow-x-hidden' >
 
  
     <div >
