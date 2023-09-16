@@ -6,6 +6,7 @@ import Wallet from './pages/Wallet';
 import Dashboard from './dashboardpages/Dashboard';
 import Customer from './dashboardpages/Customer';
 import Transactions from './dashboardpages/Transactions'
+import AddcoinModal from './dashboardpages/AddcoinModal';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
        <Route  path='/dashboard' element={ <Dashboard/>}/>
        <Route  path='/customers' element={ <Customer/>}/>
        <Route path='/transactions' element={<Transactions/>}/>
+       <Route path='/addcoinmodal' element={<AddcoinModal/>}/>
         </Routes>
     
      </Router>

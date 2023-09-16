@@ -26,7 +26,7 @@ const Customer = () => {
 
 
   return (
-    <div className="flex flex-col font-fontb">
+    <div className="flex flex-col font-fontb relative">
     <div className=" ">
       <DashboardTop/>
     </div>
