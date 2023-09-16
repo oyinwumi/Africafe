@@ -1,15 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import AuthImage from "../assets/authimg.png";
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
+
 
 const SignIn = () => {
   const[email, setEmail] = useState("");
   const[password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleSignup = () =>{
    console.log( email, password)
 
+   
+
   }
+
   return (
     
     <div className="w-screen h-screen  flex overflow-hidden  ">
@@ -21,12 +31,29 @@ const SignIn = () => {
       <p className="text-[20px] pb-10">We are thrilled to see you</p>
        <form action="" className=" ">
         <label htmlFor="">Email</label><br />
-        <input type="email" className=" p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-lg" value={email} onChange={(e) => setEmail(e.target.value)}/><br />
-        <label htmlFor="">Password</label><br />
-        <input type="password" className=" p-2 w-full h-[48px] border   border-[#A8AEB2] mt-2 mb-6 outline-none rounded-lg" value={password} onChange={(e) => setPassword(e.target.value)}/><br />
+        <input type="email" className=" p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" value={email} onChange={(e) => setEmail(e.target.value)}/><br />
+        <div>
+      <label htmlFor="password">Password</label>
+      <div className="relative">
+        <input
+          type={showPassword ? 'text' : 'password'}
+          id="password"
+          className="p-2 w-full h-[48px] border border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <span className="absolute right-5 top-6">
+          {showPassword ? (
+            <FaEyeSlash onClick={togglePasswordVisibility} />
+          ) : (
+            <FaEye onClick={togglePasswordVisibility} />
+          )}
+        </span>
+      </div>
+    </div>
         <Link to="/dashboard"><button className=" bg-[#03292C] text-[#FFFFFF] text-xl w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Sign up</button> <br /></Link>
         <Link to="/"> <button className=" text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
-</Link>
+       </Link>
        </form>
        <p className="text-center text-[14px] ">Not account yet?  <span className="text-[#A77444]"><Link to="/signup">Get started</Link></span></p>
     </div>

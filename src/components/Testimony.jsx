@@ -12,7 +12,7 @@ const Testimony = () => {
     <div className='bg-[#03292C] md:px-[90px] px-8 py-[33px]'>
          <h2 className="text-[#FFFFFF] text-[52px] uppercase text-center py-10">our customers voices</h2>
 
-         <div className="text-[#202223] font-fontb  flex gap-10 pb-20">
+         <div className="text-[#202223] font-fontb  flex gap-10 pb-20 " >
 
          <div className="flex flex-col gap-8 ">
             <div className=" bg-[#FFFFFF] border border-[#FFFFFF] rounded-lg p-5 w-[500px] h-[250px] relative">
