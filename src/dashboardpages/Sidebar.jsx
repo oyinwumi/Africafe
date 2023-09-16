@@ -56,16 +56,7 @@ const Sidebar = () => {
         name: 'Report',
         icon: <img src={Report} alt="" />,
       },
-    //   {
-    //     path: '/setings',
-    //     name: 'Settings',
-    //     icon: <img src={Settings} alt="" />,
-    //   },
-    //   {
-    //     path: '/logout',
-    //     name: 'Logout',
-    //     icon: <img src={Logout} alt="" />,
-    //   },
+ 
   ];
 
   return (
@@ -84,7 +75,7 @@ const Sidebar = () => {
                 to={item.path}
                 key={index}
                 className='px-4 md:text-center text-black'>
-                <div className='flex hover:bg-[#F3F2F1]  p-1 hover:border-r-2-[#A77444]  text-xl items-center'>
+                <div className='flex hover:bg-[#F3F2F1]  p-1 hover:border-r-2-[#A77444]  text-lg items-center'>
                   <div className='mr-4 '>{item.icon}</div>
                   <div className={` ${open ? 'display:block ' : 'hidden '}`}>
                     {item.name}
@@ -93,7 +84,7 @@ const Sidebar = () => {
               </NavLink>
             );
           })}
-          <div className='flex  flex-col  gap-8 text-xl  mt-[330px] cursor-pointer'  >
+          <div className='flex  flex-col  gap-8 text-lg  mt-[330px] cursor-pointer'  >
             <div className='flex  hover:bg-[#F3F2F1] p-1 hover:border-r-4 '>
             <img src={Settings} alt="" />
               <p className='ml-3'>Settings </p>
