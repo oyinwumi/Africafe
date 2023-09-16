@@ -104,23 +104,23 @@ const Customer = () => {
                   </div>
                   <div className=" flex gap-4 mb-5">
                     <img src={Tabler} alt="" />
-                    <div>
-                       <h5>{coin.amount2}</h5>
-                       <p>{coin.discount}</p>
+                    <div className="text-[12px]">
+                       <h5 >{coin.amount2}</h5>
+                       <p className="text-[#77737C]">{coin.discount}</p>
                     </div>
                   </div>
                   <div className=" flex gap-4 mb-5">
                     <img src={Tabler} alt="" />
                     <div>
                        <h5>{coin.amount3}</h5>
-                       <p>{coin.payment}</p>
+                       <p className="text-[#77737C]">{coin.payment}</p>
                     </div>
                   </div>
                   <div className=" flex gap-4 mb-2">
                     <img src={Tabler} alt="" />
                     <div>
                        <h5>{coin.amount4}</h5>
-                       <p>{coin.payment}</p>
+                       <p className="text-[#77737C]">{coin.payment}</p>
                     </div>
                   </div>
                   <p className="text-center text-[#A77444] text-[12px] mb-3">See all loyalty summary</p>

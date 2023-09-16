@@ -15,8 +15,6 @@ const Dashboard = () => {
     {id: "B", email1: "anajamacallista@gmail.com" , number1: "07071223456", email2: "anajamacallista@gmail.com" , number2: "07071223456", email3: "anajamacallista@gmail.com" , number3: "07071223456", email4: "anajamacallista@gmail.com" , number4: "07071223456"},
   ];
   return (
-  
-
         
         <div className="flex flex-col font-fontb">
           <div className=" ">
@@ -46,7 +44,7 @@ const Dashboard = () => {
                 }
              </div>
 
-            <div className="bg-[#FFFFFF] border p-6 mt-8 rounded overflow-y-scroll  scroll-my-6 snap-y  ">
+            <div className="bg-[#FFFFFF] border p-6 mt-8 rounded    ">
                <div className="flex justify-between items-center">
                 <h3>All Customers</h3>
                 <div className="flex gap-4">
