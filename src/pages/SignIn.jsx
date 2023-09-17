@@ -24,9 +24,9 @@ const SignIn = () => {
     
     <div className="w-full h-full  flex overflow-x-hidden  g:py-0 py-8">
     <div className="w-1/2 lg:block hidden">
-      <img src={AuthImage} alt="" className=" w-full "/>
+      <img src={AuthImage} alt="" className=" w-full h-full "/>
     </div>
-    <div className=" lg:w-1/2 w-full border rounded lg:p-20 p-8  bg-[#FFFFFF]">
+    <div className=" lg:w-1/2 w-full h-full lg:border border-none rounded lg:p-20 p-8  bg-[#FFFFFF]">
       <h2 className="lg:text-[36px] text-[32px]  text-[#202223] pt-10">Welcome to Africafé!</h2>
       <p className="lg:text-[20px] text-sm pb-10">We are thrilled to see you</p>
        <form action="" className=" ">
