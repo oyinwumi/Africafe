@@ -45,12 +45,12 @@ const Dashboard = () => {
              </div>
 
             <div className="bg-[#FFFFFF] border p-6 mt-8 rounded    ">
-               <div className="flex justify-between items-center">
+               <div className="flex lg:flex-row flex-col justify-between items-center">
                 <h3>All Customers</h3>
-                <div className="flex gap-4">
+                <div className="flex lg:gap-4 gap-0">
                   <div className="relative">
                     <img src={Search} alt="" className="absolute top-3 left-3" />
-                  <input type="text" placeholder="Search by name or phone number" className=" placeholder:pl-8 border px-4  rounded h-[40px]  w-[354px]" />
+                  <input type="text" placeholder="Search by name or phone number" className=" placeholder:pl-8 border px-4  rounded h-[40px]  lg:w-[354px] w-[80%]" />
                   
                   </div>
                   <img src={FilterIcon} alt="" />

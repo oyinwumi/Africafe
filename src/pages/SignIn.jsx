@@ -26,7 +26,7 @@ const SignIn = () => {
     <div className="w-1/2 lg:block hidden">
       <img src={AuthImage} alt="" className=" w-full "/>
     </div>
-    <div className=" lg:w-1/2 w-full border rounded lg:p-20 p-8 pt-14 bg-[#FFFFFF]">
+    <div className=" lg:w-1/2 w-full border rounded lg:p-20 p-8  bg-[#FFFFFF]">
       <h2 className="lg:text-[36px] text-[32px]  text-[#202223] pt-10">Welcome to Africafé!</h2>
       <p className="lg:text-[20px] text-sm pb-10">We are thrilled to see you</p>
        <form action="" className=" ">
@@ -55,7 +55,7 @@ const SignIn = () => {
         <Link to="/"> <button className=" hover:bg-[#03292C] hover:text-white text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
        </Link>
        </form>
-       <p className="text-center text-[14px] ">Not account yet?  <span className="text-[#A77444]"><Link to="/signup">Get started</Link></span></p>
+       <p className="text-center text-[14px] mb-10">Not account yet?  <span className="text-[#A77444]"><Link to="/signup">Get started</Link></span></p>
     </div>
   </div>
   
