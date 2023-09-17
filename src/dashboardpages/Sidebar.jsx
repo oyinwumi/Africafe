@@ -47,8 +47,8 @@ const Sidebar = () => {
       icon: <img src={Transaction} alt="" />,
     },
     {
-      path: '/loyalty-reward',
-      name: 'Loyalty reward',
+      path: '/africoin',
+      name: 'Africoin program',
       icon: <img src={Loyalty} alt="" />,
     },
     {
