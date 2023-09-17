@@ -22,11 +22,11 @@ const SignIn = () => {
 
   return (
     
-    <div className="w-full h-full  flex overflow-x-hidden ">
+    <div className="w-full h-full  flex overflow-x-hidden lg:py-0 py-6">
     <div className="w-1/2 lg:block hidden">
       <img src={AuthImage} alt="" className=" w-full h-full "/>
     </div>
-    <div className=" lg:w-1/2 w-full h-full lg:border border-none rounded lg:px-20 px-8  bg-[#FFFFFF]">
+    <div className=" lg:w-1/2 w-full h-full lg:border border-none rounded lg:px-20 px-8 lg:py-20 py-0 bg-[#FFFFFF]">
       <h2 className="lg:text-[36px] text-[32px]  text-[#202223] pt-10">Welcome to Africafé!</h2>
       <p className="lg:text-[20px] text-sm pb-10">We are thrilled to see you</p>
        <form action="" className=" ">
