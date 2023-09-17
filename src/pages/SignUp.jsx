@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
+import { useDispatch } from "react-redux";
 import AuthImage from "../assets/authimg.png";
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
+import { signUpUser } from "../redux/authSlice";
 
 
 const SignUp = () => {
-  const[fullname, setFullname] = useState("");
+
+  const[firstName, setFirstName] = useState("");
+  const[lastName, setLastName] = useState("");
    const[email, setEmail] = useState("");
    const[phoneNumber, setPhoneNumber] = useState("");
    const[password, setPassword] = useState("");
@@ -15,13 +19,27 @@ const SignUp = () => {
     setShowPassword(!showPassword);
   };
 
+  const dispatch = useDispatch();
+
+  const bodySignUp = {
+    firstName,
+    lastName,
+    email, 
+    role: "Cashier", 
+    password
+  }
+   
+  useEffect(()=>{
+    dispatch( signUpUser(bodySignUp))
+   },[])
+
    const handleSignup = () =>{
-    console.log(fullname, email, phoneNumber, password)
+    console.log(firstName,lastName, email, phoneNumber, password)
    }
 
   return (
    
-      <div className="w-screen h-screen  flex overflow-hidden">
+      <div className="w-screen h-screen  flex overflow-x-hidden">
       <div className="w-1/2 lg:block hidden">
         <img src={AuthImage} alt="" className="w-full"/>
       </div>
@@ -29,8 +47,10 @@ const SignUp = () => {
         <h2 className="lg:text-[36px] text-[32px]  text-[#202223] pt-10">Welcome to Africafé!</h2>
         <p className="lg:text-[20px] text-sm pb-10">We are thrilled to see you</p>
          <form action="" className=" ">
-         <label htmlFor="">Full name</label><br />
-          <input type="text" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" value={fullname} onChange={(e) => setFullname(e.target.value)}/><br />
+         <label htmlFor="">First name</label><br />
+          <input type="text" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" value={firstName} onChange={(e) => setFirstName(e.target.value)}/><br />
+         <label htmlFor="">Last name</label><br />
+          <input type="text" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" value={lastName} onChange={(e) => setLastName(e.target.value)}/><br />
           <label htmlFor="">Email</label><br />
           <input type="email" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" value={email} onChange={(e) => setEmail(e.target.value)}/><br />
           <label htmlFor="">Phone Number</label><br />

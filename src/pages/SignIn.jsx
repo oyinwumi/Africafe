@@ -22,7 +22,7 @@ const SignIn = () => {
 
   return (
     
-    <div className="w-screen h-screen  flex overflow-hidden  ">
+    <div className="w-screen h-screen  flex overflow-x-hidden  ">
     <div className="w-1/2 lg:block hidden">
       <img src={AuthImage} alt="" className=" w-full "/>
     </div>

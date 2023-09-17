@@ -1,25 +1,35 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
 
-// const url = '/api/citrone/user/courses'
+const baseurl = 'https://africafe.onrender.com' ;
+
+
 
 
 const initialState = {
-    msg: "",
-    user: "",
-    token: "",
-    loading: false,
-    error : ""
+    messages: "" ,
+    status: "",
+    data: {
+      adminId: "",
+      email: "",
+      firstName: "",
+      lastName: "",
+      role: "",
+      createdAt: "",
+      updatedAt: ""
+    } 
 }
 
-// const signUpUser = createAsyncThunk( "signUpUser", async()=> {
-//    const response = await fetch( url , {
-//     method: "post",
-//     headers: {},
-//     body: JSON.stringify(body),
-//     return await response.json()
-//    })
-// })
+export const signUpUser = createAsyncThunk( "signUpUser", async(bodySignUp)=> {
+  try{
+    const response = await axios.post(`${baseurl}/api/v1/customers/signup-customer`, bodySignUp)
+    console.log("responses", response.data)
+    return response.data
+  }catch (error){
+    console.log(`"Error", ${error.message}`)
+  }
+})
 
 
 const authSlice = createSlice({
