@@ -78,7 +78,7 @@ const SignUp = () => {
         <Link to="/"> <button className=" hover:bg-bg-[#03292C] hover:text-white text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
         </Link>
          </form>
-         <p className="text-center text-[14px]">By clicking sign up you agree to Africafé <span className="text-[#A77444]">Terms and Condition</span></p>
+         <p className="text-center text-[14px] mb-10">By clicking sign up you agree to Africafé <span className="text-[#A77444]">Terms and Condition</span></p>
       </div>
     </div>
     
