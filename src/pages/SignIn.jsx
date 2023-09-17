@@ -22,7 +22,7 @@ const SignIn = () => {
 
   return (
     
-    <div className="w-screen h-screen  flex overflow-x-hidden  ">
+    <div className="w-full h-full  flex overflow-x-hidden  g:py-0 py-8">
     <div className="w-1/2 lg:block hidden">
       <img src={AuthImage} alt="" className=" w-full "/>
     </div>
@@ -55,7 +55,7 @@ const SignIn = () => {
         <Link to="/"> <button className=" hover:bg-[#03292C] hover:text-white text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
        </Link>
        </form>
-       <p className="text-center text-[14px] mb-10">Not account yet?  <span className="text-[#A77444]"><Link to="/signup">Get started</Link></span></p>
+       <p className="text-center text-[14px] ">Not account yet?  <span className="text-[#A77444]"><Link to="/signup">Get started</Link></span></p>
     </div>
   </div>
   
