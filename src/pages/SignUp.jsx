@@ -22,12 +22,12 @@ const SignUp = () => {
   return (
    
       <div className="w-screen h-screen  flex overflow-hidden">
-      <div className="w-1/2">
+      <div className="w-1/2 lg:block hidden">
         <img src={AuthImage} alt="" className="w-full"/>
       </div>
-      <div className=" w-1/2 border rounded p-20 bg-[#FFFFFF]">
-        <h2 className="text-[36px] text-[#202223] pt-10">Welcome to Africafé!</h2>
-        <p className="text-[20px] pb-10">We are thrilled to see you</p>
+      <div className=" lg:w-1/2 w-full border rounded lg:p-20 p-8 pt-14 bg-[#FFFFFF]">
+        <h2 className="lg:text-[36px] text-[32px]  text-[#202223] pt-10">Welcome to Africafé!</h2>
+        <p className="lg:text-[20px] text-sm pb-10">We are thrilled to see you</p>
          <form action="" className=" ">
          <label htmlFor="">Full name</label><br />
           <input type="text" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" value={fullname} onChange={(e) => setFullname(e.target.value)}/><br />
@@ -54,9 +54,9 @@ const SignUp = () => {
         </span>
       </div>
     </div>
-        <button className=" bg-[#03292C] text-[#FFFFFF] text-xl w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Sign up</button> <br />
-        <Link to="/"> <button className=" text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
-</Link>
+        <button className=" bg-[#03292C] hover:bg-white  text-[#FFFFFF] hover:tex-[#202223] text-xl w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Sign up</button> <br />
+        <Link to="/"> <button className=" hover:bg-bg-[#03292C] hover:text-white text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
+        </Link>
          </form>
          <p className="text-center text-[14px]">By clicking sign up you agree to Africafé <span className="text-[#A77444]">Terms and Condition</span></p>
       </div>

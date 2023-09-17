@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div  className="bg-[#03292C] text-[#FFFFFF] md:px-[90px] px-8 pt-[33px] pb-16">
-        <h2 className="text-[36px] text-center uppercase"> journey to the heart of africa, one dish at a time</h2>
-        <div className="flex justify-center gap-[700px]  pt-20">
+        <h2 className="lg:text-[36px] text-[22px] text-center uppercase"> journey to the heart of africa, one dish at a time</h2>
+        <div className="flex lg:flex-row flex-col justify-center lg:gap-[700px] gap-10  pt-20">
            <div className=" text-center text-xl">
             <h6>Contact</h6>
             <p className="mt-2">Contact@africacafe.com</p>
            </div>
-           <div className="flex gap-10 items-center text-center">
+           <div className="flex lg:flex-row flex-col gap-10 items-center text-center">
             <Link to="" className="flex flex-col items-center">
               <img src={TwitterLogo} alt="" />
               <p className="mt-2">Twitter</p>

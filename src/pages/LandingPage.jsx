@@ -9,12 +9,9 @@ import NavImg from "../assets/navimg.png"
 
 const LandingPage = () => {
   return (
-    <div className='w-full h-full relative '>
-      <div className='fixed w-full z-0'>
-      <img src={NavImg} alt="" className='w-full object-cover ' />
-
-      </div>
-      <div className=' w-full absolute z-50'>
+    <div className=' relative  '>
+      <img src={NavImg} alt="" className='fixed w-full h-full  z-0 md:block hidden overflow-hidden' />
+      <div className=' w-full absolute z-50 '>
         <Navbar/>
         <Hero/>
         <Vision/>
