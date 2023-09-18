@@ -51,7 +51,7 @@ const SignIn = () => {
         </span>
       </div>
     </div>
-        <Link to="/dashboard"><button className=" bg-[#03292C] hover:bg-white hover:text-[#202223] text-[#FFFFFF] text-xl w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Sign in</button> <br /></Link>
+        <Link to="/africoin"><button className=" bg-[#03292C] hover:bg-white hover:text-[#202223] text-[#FFFFFF] text-xl w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Sign in</button> <br /></Link>
         <Link to="/"> <button className=" hover:bg-[#03292C] hover:text-white text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Cancel</button> <br />
        </Link>
        </form>

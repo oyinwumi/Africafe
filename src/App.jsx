@@ -13,10 +13,8 @@ import EditCoin from './dashboardpages/EditCoin';
 function App() {
 
   return (
-   <div className='' >
 
- 
-    <div  >
+    <div   className='h-full w-full' >
     <Router>
     
         <Routes>
@@ -36,7 +34,7 @@ function App() {
     
      </Router>
     </div>
-   </div>
+  
   )
 }
 

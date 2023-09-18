@@ -8,7 +8,7 @@ import Cart2 from "../assets/shopping_cart.svg";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className=" font-font bg-[#F2EFE8] md:px-[90px] px-8 py-[33px] flex justify-between items-center  text-lg text-[#202223] font-medium">
+    <div className="w-full font-font bg-[#F2EFE8] md:px-[90px] px-8 py-[33px] flex justify-between items-center  text-lg text-[#202223] font-medium">
        <div className="lg:flex gap-10  hidden ">
        <Link to="/wallet" className="">Wallet</Link>
          <Link to="/shop" className="">Shop</Link>

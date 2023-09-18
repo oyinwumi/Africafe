@@ -1,9 +1,9 @@
 import { useState} from "react";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import AuthImage from "../assets/authimg.png";
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
-import { signUpUser } from "../redux/authSlice";
+// import { signUpUser } from "../redux/authSlice";
 
 
 const SignUp = () => {
@@ -13,7 +13,7 @@ const SignUp = () => {
    const[email, setEmail] = useState("");
    const[phoneNumber, setPhoneNumber] = useState("");
    const[password, setPassword] = useState("");
-   const[role, setRole] = useState("");
+  //  const[role, setRole] = useState("");
 
    const [showPassword, setShowPassword] = useState(false);
 
@@ -21,7 +21,7 @@ const SignUp = () => {
     setShowPassword(!showPassword);
   };
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
 
    
@@ -29,29 +29,28 @@ const SignUp = () => {
   //   dispatch( signUpUser(bodySignUp))
   //  },[])
 
-   const handleSignup = (e) =>{
-    e.preventDefault()
-    const bodySignUp = {
-      firstName,
-      lastName,
-      email, 
-      role: "Cashier", 
-      password,
-      phoneNumber
-    }
-    if( firstName&&
-      lastName&&
-      email&& 
-      phoneNumber&&
-      role&&
-      password){
-        alert("sign up successful")
-      }
+  //  const handleSignup = (e) =>{
+  //   e.preventDefault()
+  //   // const bodySignUp = {
+  //   //   firstName,
+  //   //   lastName,
+  //   //   email, 
+  //   //   role: "Cashier", 
+  //   //   password,
+  //   //   phoneNumber
+  //   // }
+  //   // if( firstName&&
+  //   //   lastName&&
+  //   //   email&& 
+  //   //   phoneNumber&&
+  //   //   password){
+  //   //     alert("sign up successful")
+  //   //   }
   
-    console.log(`bodysign ${bodySignUp}`)
-    dispatch( signUpUser(bodySignUp))
-    //console.log(firstName,lastName, email, phoneNumber, password)
-   }
+  //   // console.log(`bodysign ${bodySignUp}`)
+  //   // dispatch( signUpUser(bodySignUp))
+  //   //console.log(firstName,lastName, email, phoneNumber, password)
+  //  }
 
   return (
    
@@ -72,14 +71,14 @@ const SignUp = () => {
           <label htmlFor="">Phone Number</label><br />
           <input type="email" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/><br />
 
-          <label htmlFor="">Role</label><br />
+          {/* <label htmlFor="">Role</label><br />
           <select name="" className="p-2 w-full h-[48px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" value={role}
           onChange={(e) => setRole(e.target.value)}
           >
             <option value="">customer</option>
             <option value="">Admin</option>
 
-          </select><br />
+          </select><br /> */}
           <div>
       <label htmlFor="password">Password</label>
       <div className="relative">
@@ -99,8 +98,9 @@ const SignUp = () => {
         </span>
       </div>
     </div>
-        <button className=" bg-[#03292C] hover:bg-white  text-[#FFFFFF] hover:tex-[#202223] text-xl w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" onClick={handleSignup}>Sign up</button> <br />
-        <Link to="/signin"> <button className=" hover:bg-bg-[#03292C] hover:text-white text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl">Cancel</button> <br />
+       <Link to="/signin"><button className=" bg-[#03292C] hover:bg-opacity-50  text-[#FFFFFF] hover:tex-[#202223] text-xl w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl" >Sign up</button> <br />
+</Link>
+        <Link to="/"> <button className=" hover:bg-bg-[#03292C] hover:text-white text-xl tex-[#202223] w-full h-[56px] border  border-[#A8AEB2] mt-2 mb-6 outline-none rounded-3xl">Cancel</button> <br />
         </Link>
          </form>
          <p className="text-center text-[14px] ">By clicking sign up you agree to Africafé <span className="text-[#A77444]">Terms and Condition</span></p>
