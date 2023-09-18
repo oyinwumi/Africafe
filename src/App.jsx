@@ -8,6 +8,7 @@ import Customer from './dashboardpages/Customer';
 import Transactions from './dashboardpages/Transactions'
 import AddcoinModal from './dashboardpages/AddcoinModal';
 import Africoin from './dashboardpages/Africoin';
+import EditCoin from './dashboardpages/EditCoin';
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
        <Route path='/transactions' element={<Transactions/>}/>
        <Route path='/addcoinmodal' element={<AddcoinModal/>}/>
        <Route path='/africoin' element={<Africoin/>}/>
+       <Route path='/edit-coin' element={<EditCoin/>}/>
+
 
         </Routes>
     

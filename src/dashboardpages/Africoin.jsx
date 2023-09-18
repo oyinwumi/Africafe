@@ -1,86 +1,4 @@
-// // import { useState } from "react";
-// // import { Link } from "react-router-dom";
-// import DashboardTop from "./DashboardTop"
-// import Sidebar from "./Sidebar"
-// import Coin from "../assets/coin.svg";
-
-
-// const Africoin = () => {
-
-//     const walletDatas = [
-//         { title: 'africoin issued', amount: '710' , percent: '+8%'},
-//         { title: 'africoin issued', amount: '560' , percent: '+8%'},
-    
-//       ];
-//       const recentActivities = [
-//         {phoneNumber:' 0702345768', date: '14.09.2023' , coin: '100'},
-//         {phoneNumber:' 0702345768', date: '14.09.2023' , coin: '100'},
-//         {phoneNumber:' 0702345768', date: '14.09.2023' , coin: '100'},
-//         {phoneNumber:' 0702345768', date: '14.09.2023' , coin: '100'},
-//         {phoneNumber:' 0702345768', date: '14.09.2023' , coin: '100'},
-
-    
-//       ]
-
-//   return (
-//     <div className="flex flex-col font-fontb relative ">
-//     <div className=" ">
-//       <DashboardTop/>
-//     </div>
-//     <div className="flex text-[#202223]">
-//     <Sidebar/>
-//     <div className=" p-6 bg-[#F3F2F1] w-full">
-//       <h2 className="mt-6 pb-4  text-[24px] font-bold border-b">Africoin program</h2>
-//       <div></div>
-//       <div className="flex gap-10 my-6"> 
-//                 {
-//                   walletDatas.map((data, key)=>{
-//                     return (<div key={key} className="flex  flex-col gap-6 border rounded bg-[#FFFFFF] p-4 w-[240px] text-[12px]">
-//                       <div>
-//                         <h5 className="uppercase  text-[#535353]font-medium">{data.title}</h5>
-//                       </div>
-//                       <div className="flex gap-1">
-//                       <img src={Coin} alt="" />
-//                         <p className="text-[#202223] font-bold">{data.amount}</p>
-//                       </div>
-//                     </div>)
-//                   })
-//                 }
-//              </div>
-//        <div className="bg-[#FFFFFF] p-6 mt-10">
-//          <h3 className="text-xl">Recent activities</h3> 
-//          <div className="p-6  mt-10">
-//                  <table className="table-auto">
-//                     <thead>
-//                       <tr  className="flex justify-between my-6">
-//                       <th>Phone Number</th>
-//                         <th>Coin</th>
-//                         <th>Date</th>
-//                       </tr>
-//                     </thead>
-//                     <tbody>
-//                       {
-//                         recentActivities.map((activity, key)=>{
-//                           return <tr key={key} className="flex justify-between"> 
-//                               <td >{activity.phoneNumber}</td>
-//                               <td >{activity.coin}</td>
-//                               <td >{activity.date}</td>
-                               
-//                           </tr>
-//                         })
-//                       }
-//                     </tbody>
-//                  </table>
-//               </div>
-//         </div>      
-//     </div>
-//     </div>
-//   </div>
-//   )
-// }
-
-// export default Africoin;
-
+import { Link } from "react-router-dom";
 import DashboardTop from "./DashboardTop";
 import Sidebar from "./Sidebar";
 import Coin from "../assets/coin.svg";
@@ -113,7 +31,8 @@ const Africoin = () => {
            <p className="font-sm hover: border-b-2 hover:border-[#A77444]">Overview</p>
             <p className="font-sm hover: border-b-2 hoverborder-[#A77444] ">Activity</p>
            </div>
-            <button className="bg-[#03292C] text-white border rounded-3xl w-[156px] h-[34px]">Edit Africoin program</button>
+           <Link to="/edit-coin"><button className="bg-[#03292C] text-white border rounded-3xl w-[156px] h-[34px]">Edit Africoin program</button>
+          </Link>
           </div>
           <div className="flex gap-10 my-6">
             {walletDatas.map((data, key) => (
